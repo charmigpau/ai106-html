@@ -3,33 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AI106 HTML project boilerplate" />
-    <title>AI106 HTML</title>
+    <meta name="description" content="HK Clinical Excellence - The Third Way to Clinical Practice" />
+    <title>HK Clinical Excellence</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
-      <h1>AI106 HTML</h1>
-      <p class="tagline">Starter boilerplate — edit and build from here.</p>
+      <h1>HK Clinical Excellence</h1>
+      <p class="tagline">The Third Way clinical philosophy</p>
     </header>
 
     <main id="main">
-      <section class="card" aria-labelledby="welcome-heading">
-        <h2 id="welcome-heading">Welcome</h2>
+      <!-- Hero Section - Asymmetric Editorial Layout -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <div class="hero-accent-line"></div>
+          <h1 id="hero-heading">Transforming Clinical Practice</h1>
+          <p class="hero-text">
+            We believe in a balanced approach to clinical excellence that honors both scientific rigor and the human spirit. The HK Third Way represents a philosophy of sustainable, compassionate care that transforms lives through evidence-based practice with cultural wisdom.
+          </p>
+          <button type="button" class="button">Learn More</button>
+        </div>
+
+        <div class="hero-image-container">
+          <!-- Placeholder for hero image - can be replaced with actual image -->
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 3rem; opacity: 0.3;">🌿</div>
+        </div>
+      </section>
+
+      <!-- Philosophy Section - Three Column Layout -->
+      <section class="philosophy-section" aria-labelledby="philosophy-heading">
+        <div class="philosophy-heading">
+          <h2 id="philosophy-heading">The Third Way Philosophy</h2>
+          <p class="philosophy-subheading">
+            A comprehensive approach integrating validation, science, and resilience
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          <!-- Card 1: Validation -->
+          <article class="philosophy-card">
+            <div class="card-icon">✓</div>
+            <h3>Validation</h3>
+            <p>
+              We begin by acknowledging local cultural struggles and individual experiences. Validation creates the foundation of trust and genuine engagement, recognizing that every client's context matters profoundly.
+            </p>
+          </article>
+
+          <!-- Card 2: The Science -->
+          <article class="philosophy-card">
+            <div class="card-icon">◈</div>
+            <h3>The Science</h3>
+            <p>
+              Applied Behavior Analysis (ABA) provides evidence-based frameworks that deliver measurable outcomes. Our scientific approach ensures accountability while remaining flexible and responsive to individual needs.
+            </p>
+          </article>
+
+          <!-- Card 3: The Soul -->
+          <article class="philosophy-card">
+            <div class="card-icon">❖</div>
+            <h3>The Soul</h3>
+            <p>
+              Beyond metrics and data, we cultivate resilient growth through genuine connection. This approach honors the human experience, fostering meaningful development and sustainable behavioral change.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Welcome Card Section -->
+      <section class="card mt-3xl" aria-labelledby="welcome-heading" style="max-width: var(--max-width); margin-left: auto; margin-right: auto; margin-top: var(--space-3xl);">
+        <h2 id="welcome-heading">Welcome to Our Platform</h2>
         <p>
-          This project includes separate HTML, CSS, and JavaScript files. Open
-          <code>index.html</code> in a browser or use a local dev server to
-          get started.
+          This project demonstrates modern web design principles with a focus on accessibility, responsive design, and premium aesthetics. The foundation is built with semantic HTML, CSS custom properties, and a comprehensive design system.
         </p>
-        <button type="button" id="demo-button" class="button">
-          Try the demo
+        <button type="button" id="demo-button" class="button button-accent">
+          Try the Demo
         </button>
         <p id="demo-output" class="demo-output" aria-live="polite"></p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> AI106 HTML</p>
+      <p>&copy; <span id="year"></span> HK Clinical Excellence. All rights reserved.</p>
     </footer>
 
     <script src="js/main.js" defer></script>
