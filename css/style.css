@@ -217,13 +217,98 @@ code {
 
 .site-header {
   padding: var(--space-xl) var(--space-md);
-  text-align: center;
   background-color: var(--color-surface);
   box-shadow: var(--shadow);
 }
 
-.site-header h1 {
+.site-nav {
+  width: 100%;
+}
+
+.nav-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.nav-brand {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-brand h1 {
   margin-bottom: var(--space-sm);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+/* Language Toggle - Soft & Intuitive */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background-color: rgba(163, 177, 163, 0.08);
+  border: 1px solid rgba(163, 177, 163, 0.15);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  letter-spacing: 0.5px;
+}
+
+.lang-toggle:hover {
+  background-color: rgba(163, 177, 163, 0.12);
+  border-color: rgba(163, 177, 163, 0.25);
+  color: var(--primary-text);
+}
+
+.lang-toggle:focus-visible {
+  outline: 2px solid var(--sage-green);
+  outline-offset: 2px;
+}
+
+.lang-option {
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.lang-option.active {
+  color: var(--primary-brand);
+  font-weight: 700;
+}
+
+.lang-option::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--sage-green);
+  border-radius: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-base);
+}
+
+.lang-option.active::after {
+  transform: scaleX(1);
+}
+
+.lang-divider {
+  opacity: 0.2;
+  font-weight: 400;
 }
 
 .tagline {
@@ -250,6 +335,28 @@ code {
 
 .site-footer p {
   margin: 0;
+}
+
+/* Responsive Navigation */
+@media (max-width: 640px) {
+  .nav-container {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .nav-brand {
+    width: 100%;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .lang-toggle {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+  }
 }
 
 /* ==========================================================================
@@ -704,6 +811,137 @@ code {
 
 .demo-output:not(:empty) {
   color: var(--color-text);
+}
+
+/* ==========================================================================
+   Appointment Booking Section
+   ========================================================================== */
+
+.appointment-section {
+  max-width: var(--max-width-lg);
+  margin: var(--space-3xl) auto;
+  padding: var(--space-3xl) var(--space-md);
+}
+
+.appointment-container {
+  background: linear-gradient(135deg, rgba(163, 177, 163, 0.05) 0%, rgba(212, 184, 150, 0.05) 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl);
+  border: 1px solid rgba(163, 177, 163, 0.1);
+}
+
+.appointment-content {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.appointment-content h2 {
+  color: var(--primary-text);
+  margin-bottom: var(--space-md);
+}
+
+.appointment-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: var(--max-width-md);
+  margin: 0 auto;
+}
+
+/* Form Styles */
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  max-width: var(--max-width-md);
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.form-group label {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--primary-text);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  transition: all var(--transition-base);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--sage-green);
+  box-shadow: 0 0 0 3px rgba(163, 177, 163, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: var(--font-sans);
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235a5a5a' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+/* Form Row Responsive */
+@media (max-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .appointment-container {
+    padding: var(--space-2xl) var(--space-lg);
+  }
+}
+
+.form-message {
+  margin: 0;
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  font-weight: 500;
+  min-height: 1.5em;
+  text-align: center;
+}
+
+.form-message.success {
+  background-color: rgba(163, 177, 163, 0.1);
+  color: var(--sage-green);
+  border: 1px solid rgba(163, 177, 163, 0.3);
+}
+
+.form-message.error {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.3);
 }
 
 /* ==========================================================================

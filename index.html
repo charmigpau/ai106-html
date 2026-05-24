@@ -9,8 +9,26 @@
   </head>
   <body>
     <header class="site-header">
-      <h1>Nurture & Grow</h1>
-      <p class="tagline">Parenting with confidence and joy</p>
+      <nav class="site-nav">
+        <div class="nav-container">
+          <div class="nav-brand">
+            <div class="brand-logo-group">
+              <img src="CharmingBCBA Logo.png" alt="CharmingBCBA Logo" class="brand-logo" />
+              <div class="brand-text">
+                <h1 data-lang-en="Nurture & Grow" data-lang-zh="培育與成長">Nurture & Grow</h1>
+                <p class="tagline" data-lang-en="Parenting with confidence and joy" data-lang-zh="充滿信心和喜悅的育兒">Parenting with confidence and joy</p>
+              </div>
+            </div>
+          </div>
+          <div class="nav-actions">
+            <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language" title="Switch between English and Traditional Chinese">
+              <span class="lang-option lang-en" data-lang="en">EN</span>
+              <span class="lang-divider">|</span>
+              <span class="lang-option lang-zh" data-lang="zh">繁</span>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main id="main">
@@ -18,11 +36,11 @@
       <section class="hero" aria-labelledby="hero-heading">
         <div class="hero-content">
           <div class="hero-accent-line"></div>
-          <h1 id="hero-heading">Every moment with your child matters</h1>
-          <p class="hero-text">
+          <h1 id="hero-heading" data-lang-en="Every moment with your child matters" data-lang-zh="與孩子的每一刻都很重要">Every moment with your child matters</h1>
+          <p class="hero-text" data-lang-en="Parenting is a journey filled with joy, questions, and growth. We're here to support you through every stage with compassionate guidance, practical strategies, and the warmth of a community that truly understands. You're doing an amazing job." data-lang-zh="育兒是一段充滿喜悅、疑問和成長的旅程。我們在這裡透過同情的指導、實用的策略和真正理解的社區溫暖，在每個階段支持您。您做得非常好。">
             Parenting is a journey filled with joy, questions, and growth. We're here to support you through every stage with compassionate guidance, practical strategies, and the warmth of a community that truly understands. You're doing an amazing job.
           </p>
-          <button type="button" class="button button-sage">Start Your Journey</button>
+          <button type="button" class="button button-sage" data-lang-en="Start Your Journey" data-lang-zh="開始您的旅程">Start Your Journey</button>
         </div>
 
         <div class="hero-image-container">
@@ -39,8 +57,8 @@
       <!-- Philosophy Section - Three Column Layout -->
       <section class="philosophy-section" aria-labelledby="philosophy-heading">
         <div class="philosophy-heading">
-          <h2 id="philosophy-heading">The Third Way Philosophy</h2>
-          <p class="philosophy-subheading">
+          <h2 id="philosophy-heading" data-lang-en="The Third Way Philosophy" data-lang-zh="第三條路的哲學">The Third Way Philosophy</h2>
+          <p class="philosophy-subheading" data-lang-en="A comprehensive approach integrating validation, science, and resilience" data-lang-zh="整合驗證、科學和韌性的綜合方法">
             A comprehensive approach integrating validation, science, and resilience
           </p>
         </div>
@@ -49,8 +67,8 @@
           <!-- Card 1: Validation -->
           <article class="philosophy-card">
             <div class="card-icon">✓</div>
-            <h3>Validation</h3>
-            <p>
+            <h3 data-lang-en="Validation" data-lang-zh="驗證">Validation</h3>
+            <p data-lang-en="We begin by acknowledging local cultural struggles and individual experiences. Validation creates the foundation of trust and genuine engagement, recognizing that every client's context matters profoundly." data-lang-zh="我們首先承認當地文化鬥爭和個人經歷。驗證為信任和真正的互動奠定基礎，認識到每個客戶的背景都至關重要。">
               We begin by acknowledging local cultural struggles and individual experiences. Validation creates the foundation of trust and genuine engagement, recognizing that every client's context matters profoundly.
             </p>
           </article>
@@ -58,8 +76,8 @@
           <!-- Card 2: The Science -->
           <article class="philosophy-card">
             <div class="card-icon">◈</div>
-            <h3>The Science</h3>
-            <p>
+            <h3 data-lang-en="The Science" data-lang-zh="科學">The Science</h3>
+            <p data-lang-en="Applied Behavior Analysis (ABA) provides evidence-based frameworks that deliver measurable outcomes. Our scientific approach ensures accountability while remaining flexible and responsive to individual needs." data-lang-zh="應用行為分析（ABA）提供產生可測量結果的基於證據的框架。我們的科學方法確保問責制，同時保持靈活性和對個人需求的響應。">
               Applied Behavior Analysis (ABA) provides evidence-based frameworks that deliver measurable outcomes. Our scientific approach ensures accountability while remaining flexible and responsive to individual needs.
             </p>
           </article>
@@ -67,8 +85,8 @@
           <!-- Card 3: The Soul -->
           <article class="philosophy-card">
             <div class="card-icon">❖</div>
-            <h3>The Soul</h3>
-            <p>
+            <h3 data-lang-en="The Soul" data-lang-zh="靈魂">The Soul</h3>
+            <p data-lang-en="Beyond metrics and data, we cultivate resilient growth through genuine connection. This approach honors the human experience, fostering meaningful development and sustainable behavioral change." data-lang-zh="超越指標和數據，我們透過真誠的聯繫培養韌性成長。這種方法尊重人的經驗，促進有意義的發展和可持續的行為改變。">
               Beyond metrics and data, we cultivate resilient growth through genuine connection. This approach honors the human experience, fostering meaningful development and sustainable behavioral change.
             </p>
           </article>
@@ -77,19 +95,124 @@
 
       <!-- Welcome Card Section -->
       <section class="card mt-3xl" aria-labelledby="welcome-heading" style="max-width: var(--max-width); margin-left: auto; margin-right: auto; margin-top: var(--space-3xl);">
-        <h2 id="welcome-heading">Welcome to Our Platform</h2>
-        <p>
+        <h2 id="welcome-heading" data-lang-en="Welcome to Our Platform" data-lang-zh="歡迎來到我們的平台">Welcome to Our Platform</h2>
+        <p data-lang-en="This project demonstrates modern web design principles with a focus on accessibility, responsive design, and premium aesthetics. The foundation is built with semantic HTML, CSS custom properties, and a comprehensive design system." data-lang-zh="該項目展示了現代網頁設計原則，重點放在可訪問性、響應式設計和高級美學上。基礎是用語義HTML、CSS自定義屬性和綜合設計系統構建的。">
           This project demonstrates modern web design principles with a focus on accessibility, responsive design, and premium aesthetics. The foundation is built with semantic HTML, CSS custom properties, and a comprehensive design system.
         </p>
-        <button type="button" id="demo-button" class="button button-accent">
+        <button type="button" id="demo-button" class="button button-accent" data-lang-en="Try the Demo" data-lang-zh="試試演示">
           Try the Demo
         </button>
         <p id="demo-output" class="demo-output" aria-live="polite"></p>
       </section>
+
+      <!-- Appointment Booking Section -->
+      <section class="appointment-section" aria-labelledby="appointment-heading">
+        <div class="appointment-container">
+          <div class="appointment-content">
+            <h2 id="appointment-heading" data-lang-en="Book an Appointment" data-lang-zh="預約時間">Book an Appointment</h2>
+            <p class="appointment-subtitle" data-lang-en="Schedule a consultation with our team to discuss your needs and goals." data-lang-zh="與我們的團隊安排諮詢，討論您的需求和目標。">
+              Schedule a consultation with our team to discuss your needs and goals.
+            </p>
+          </div>
+
+          <form id="appointment-form" class="appointment-form">
+            <div class="form-group">
+              <label for="appointment-name" data-lang-en="Full Name" data-lang-zh="全名">Full Name</label>
+              <input 
+                type="text" 
+                id="appointment-name" 
+                name="name" 
+                placeholder="John Doe"
+                required 
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="appointment-email" data-lang-en="Email" data-lang-zh="電子郵件">Email</label>
+                <input 
+                  type="email" 
+                  id="appointment-email" 
+                  name="email" 
+                  placeholder="john@example.com"
+                  required 
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="appointment-phone" data-lang-en="Phone" data-lang-zh="電話">Phone</label>
+                <input 
+                  type="tel" 
+                  id="appointment-phone" 
+                  name="phone" 
+                  placeholder="+852 1234 5678"
+                  required 
+                  aria-required="true"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="appointment-date" data-lang-en="Preferred Date" data-lang-zh="優先日期">Preferred Date</label>
+                <input 
+                  type="date" 
+                  id="appointment-date" 
+                  name="date" 
+                  required 
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="appointment-time" data-lang-en="Preferred Time" data-lang-zh="優先時間">Preferred Time</label>
+                <input 
+                  type="time" 
+                  id="appointment-time" 
+                  name="time" 
+                  required 
+                  aria-required="true"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="appointment-service" data-lang-en="Service Type" data-lang-zh="服務類型">Service Type</label>
+              <select 
+                id="appointment-service" 
+                name="service" 
+                required 
+                aria-required="true"
+              >
+                <option value="" data-lang-en="Select a service..." data-lang-zh="選擇服務...">Select a service...</option>
+                <option value="consultation" data-lang-en="General Consultation" data-lang-zh="一般諮詢">General Consultation</option>
+                <option value="assessment" data-lang-en="Assessment" data-lang-zh="評估">Assessment</option>
+                <option value="coaching" data-lang-en="Coaching Session" data-lang-zh="教練課程">Coaching Session</option>
+                <option value="follow-up" data-lang-en="Follow-up Session" data-lang-zh="後續會議">Follow-up Session</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="appointment-notes" data-lang-en="Additional Notes" data-lang-zh="附加說明">Additional Notes</label>
+              <textarea 
+                id="appointment-notes" 
+                name="notes" 
+                rows="4" 
+                placeholder="Tell us more about your needs..."
+                data-lang-placeholder-en="Tell us more about your needs..."
+                data-lang-placeholder-zh="告訴我們您的需求..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="button button-sage" data-lang-en="Confirm Appointment" data-lang-zh="確認預約">Confirm Appointment</button>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> HK Clinical Excellence. All rights reserved.</p>
+      <p data-lang-en="&copy; " data-lang-zh="&copy; ">&copy; <span id="year"></span> <span data-lang-en="Nurture & Grow. All rights reserved." data-lang-zh="培育與成長。版權所有。">Nurture & Grow. All rights reserved.</span></p>
     </footer>
 
     <script src="js/main.js" defer></script>
