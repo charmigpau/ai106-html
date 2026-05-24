@@ -16,28 +16,28 @@
    ========================================================================== */
 
 :root {
-  /* Core Brand Colors - Warm, Calming Aesthetic */
-  --hero-bg: #faf8f5;
-  --primary-brand: #7d8c7d;
-  --primary-text: #4a4a4a;
-  --premium-accent: #c5a059;
+  /* Core Brand Colors - Bright, Optimistic & Welcoming Aesthetic */
+  --hero-bg: #fdfbf8;
+  --primary-brand: #a3b1a3;
+  --primary-text: #5a5a5a;
+  --premium-accent: #d4b896;
 
-  /* Extended Palette */
-  --sage-green: #7d8c7d;
-  --sage-green-hover: #6b7a6b;
-  --sage-green-light: #a4b5a4;
-  --slate-gray: #4a4a4a;
-  --soft-gold: #c5a059;
-  --oatmeal: #faf8f5;
+  /* Extended Palette - Lighter, Airier Tints */
+  --sage-green: #a3b1a3;
+  --sage-green-hover: #9ba79b;
+  --sage-green-light: #c3d5c3;
+  --slate-gray: #5a5a5a;
+  --soft-gold: #d4b896;
+  --oatmeal: #fdfbf8;
 
   /* Neutral Palette */
-  --color-bg: #faf8f5;
+  --color-bg: #fdfbf8;
   --color-surface: #ffffff;
-  --color-surface-secondary: #faf8f5;
-  --color-text: #4a4a4a;
-  --color-text-secondary: #6b7280;
-  --color-text-muted: #9ca3af;
-  --color-border: #e5e7eb;
+  --color-surface-secondary: #fdfbf8;
+  --color-text: #5a5a5a;
+  --color-text-secondary: #7a8080;
+  --color-text-muted: #a8aeaa;
+  --color-border: #e8eae8;
 
   /* Typography Families */
   --font-display: "Cormorant Garamond", "Source Han Serif", serif;
